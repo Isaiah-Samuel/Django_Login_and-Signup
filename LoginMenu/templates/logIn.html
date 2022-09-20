@@ -1,0 +1,52 @@
+{%load static%}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'login.css' %}">
+    <title>LOgIn Menu</title>
+</head>
+<body>
+
+    <div class="main-pg">
+        <div class="inner-pg">
+            
+            <div class="left-div">
+                <img src="" alt=" logo here ">
+                <p id="p1"> Welcome Back</p>
+                <button  id="btn-1">         
+                    <img src="{% static 'images/icons8-google.svg' %}" alt="G">
+                    <h4>LogIn with Google</h4>
+                </button>
+                 <p id="p2" ><hr id="hr1"> Or Login With Email <hr id="hr2"></p>
+                
+                <form action="" method="post">
+                    <input type="email" name="" id="email" placeholder="Your Email">
+                    <input type="password" name="" id="password" placeholder="Your Password"> <br>
+                    <input type="checkbox" name=""  checked="checked" placeholder="Keep me Logged In" id="loggedIn">
+                    <label for="loggedIn">Keep me logged in</label>
+                    <a href="#">Forgot Password</a>
+                    <button>Log In</button>
+                </form>
+
+                <hr id="hr3">
+
+                <p id="last-p">Dont have an account? <a href="#">Sign Up</a></p>
+            </div>
+
+            <div class="right-div">
+                <p id="p1"><b>New Update Available</b><br> <br> We have added some new <br> awesome features</p> <br>
+                <button class="btn">LEARN MORE</button>
+                
+                <img class="imgg" src="{% static 'images/undraw_product_explainer_8jbm.svg' %}" alt="">
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>

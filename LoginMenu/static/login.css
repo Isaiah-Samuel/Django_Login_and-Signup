@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.main-pg{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(
+      to right,
+      #cce4ff 0%,
+      #cce4ff 50%,
+      #1f1f70 50%,
+      #1f1f70 100%
+    );
+    padding: 5% 5%;
+    justify-content: center;
+    align-items: center;
+  }
+
+.inner-pg{
+    display: flex;
+    background-color:aqua;
+    height: 740px;
+    border-radius: 20px;
+    background: linear-gradient(
+        to right,
+        white 0%,
+        white 50%,
+        #e6f2ff 50%,
+        #e6f2ff 100%
+      );
+}
+
+.left-div{
+width:50%;
+padding: 5% 0;
+padding-left:5%;
+}
+
+.left-div img{
+    padding: 35% 44.3%;
+}
+.left-div #p1{
+    font-weight: bold;
+    font-size:30px;
+    padding:5% 34%;
+}
+
+#btn-1{
+    background-color:white;
+    width:50%;
+    height:40px;
+    display:inline;
+    margin: 0 24%;
+    padding: 0.5% 5%;
+    font-size: 110%;
+}
+#btn-1 img{
+    padding: 0;
+    padding-bottom: 4px;
+    float: left;
+    height:33px;
+    width:33px;
+}
+#p2{
+    margin: 5% 5%;
+    font-weight: 3px;
+    text-decoration: none;
+    color: #8c8b8b;
+}
+#hr1{
+    width:14%;
+    float:left;
+    margin-top: 10px;
+    margin-left: 24%;
+    color:#8c8b8b;
+}
+#hr2{
+    position:relative;
+    display: inline;
+    width:14%;
+    float:right;
+    right:25%;
+    margin-top:10px;
+    font-weight: 0.2px;
+    background-color:#8c8b8b;
+    
+}
+form{
+    padding:0 20%;
+    margin-top:5%;
+}
+
+#email{
+    font-size:20px;
+    /* padding: 0 10px; */
+    padding: 0 5%;
+    width:95%;
+    height: 45px;
+    margin-bottom: 10%;
+    border: 2px solid;
+    border-radius:5px;
+}
+
+#password{
+    font-size: 20px;
+    padding: 0 10px;
+    padding: 0 5%;
+    width:95%;
+    height: 45px;
+    border: 2px solid;
+    border-radius: 5px;
+    margin-bottom:5%;
+}
+
+#loggedIn{
+    width:17px;
+    height:17px;
+    padding-left:5%;
+}
+
+form a{
+    margin:9.3%;
+}
+
+form button{
+    margin:0% 3%;
+    margin-top:10%;
+    margin-bottom: 5%;
+    width:90%;
+    height:45px;
+    font-size:20px;
+    background-color:#1f1f70;
+    color:#ffffff;
+    border-radius: 8px;
+
+} 
+#hr3{
+    background-color:#8c8b8b;
+    font-weight: 20px;
+    height:0.1px;
+    width:53%;
+    margin-left:22.5%;
+}
+
+#last-p{
+    padding: 3% 25%;
+}
+
+#last-p a{
+    float:right;
+}
+
+/* The right hand Container */
+.right-div{
+    width:48%;
+    margin:1%;
+}
+
+.right-div p{
+    float:right;
+    padding:30px;
+    
+}
+b{
+    font-size: 20px;
+}
+
+.right-div button{
+    position:relative;
+    float:right;
+    top:15%;
+    left:30%;
+    height:40px;
+    width:140px;
+    font-size:17px;
+    
+}
+
+.imgg{
+    height:80%;
+    width:70%;
+    text-decoration: none;
+    float:left;
+    
+}
