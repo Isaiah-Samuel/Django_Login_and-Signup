@@ -8,28 +8,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'login.css' %}">
-    <title>LOgIn Menu</title>
+    <link rel="stylesheet" href="{% static 'register.css' %}">
+    <title>Sign Up</title>
 </head>
 
 <body>
     <div class="main">
+
         <div class="left-div">
-            <div class="circle">
-                <div class="image-container">
-                    <img src="{% static 'images/manAndcat.png' %}" alt="">
-                </div>
-            </div>
-
-        </div>
-
-        <div class="right-div">
 
             <form method='POST' action="">
 
                 <div class="text">
-                    <h1>Welcome Back</h1>
-                    <h4>Sign in to continue your progress</h4>
+                    <h1>Register Yourself</h1>
+                    <h4>Begin your journey with us today</h4>
                 </div>
                 <label for="email">Email / Username:</label>
                 <input type="email" id="email" name="email" required>
@@ -40,18 +32,18 @@
 
                     <label for="remember">
                         <input type="checkbox" id="remember" name="remember">
-                        Remember me
+                        I accept the Terms & Conditions
                     </label>
 
-                    <a href="#">Forgot password?</a>
+                    <!-- <a href="#">Forgot password?</a> -->
                 </div>
 
-                <input type="submit" value="Sign In">
+                <input type="submit" value="Sign Up">
             </form>
 
             <div  style="text-align: center;" class="alternative">
 
-                <h4>OR LOGIN WITH</h4>
+                <h4>OR SIGN UP WITH</h4>
                 <div class="socials">
                     <div class="instagram"> <img src="{% static 'images/instagram.png' %}" alt=""></div>
                     <div class="facebook"><img src="{% static 'images/facebook.png' %}" alt=""></div>
@@ -59,13 +51,25 @@
                     <div class="twitter"><img src="{% static 'images/twitter.png' %}" alt=""></div>
                 </div>
                 <div style="justify-content: center; display: flex; margin-top: 20px; ">
-                    <h4 style="margin-right: 10px;">Dont Have an Account? </h4>
-                    <a href="{% url 'register' %}">Sign Up</a>
+                    <h4 style="margin-right: 10px;">Already signed up? </h4>
+                    <a href="{% url 'logIn' %}">Click Here</a>
                 </div>
             </div>
 
 
         </div>
+
+
+        <div class="right-div">
+            <div class="circle">
+                <div class="image-container">
+                    <img src="{% static 'images/woman.png' %}" alt="">
+                </div>
+            </div>
+
+        </div>
+
+        
     </div>
 
 
