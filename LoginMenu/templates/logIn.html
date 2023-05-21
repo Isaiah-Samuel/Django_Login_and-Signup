@@ -1,8 +1,9 @@
-{%load static%}
+{% load static %}
 
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,43 +11,56 @@
     <link rel="stylesheet" href="{% static 'login.css' %}">
     <title>LOgIn Menu</title>
 </head>
+
 <body>
+    <div class="main">
+        <div class="left-div">
+            <div class="circle"></div>
 
-    <div class="main-pg">
-        <div class="inner-pg">
-            
-            <div class="left-div">
-                <img src="" alt=" logo here ">
-                <p id="p1"> Welcome Back</p>
-                <button  id="btn-1">         
-                    <img src="{% static 'images/icons8-google.svg' %}" alt="G">
-                    <h4>LogIn with Google</h4>
-                </button>
-                 <p id="p2" ><hr id="hr1"> Or Login With Email <hr id="hr2"></p>
-                
-                <form action="" method="post">
-                    <input type="email" name="" id="email" placeholder="Your Email">
-                    <input type="password" name="" id="password" placeholder="Your Password"> <br>
-                    <input type="checkbox" name=""  checked="checked" placeholder="Keep me Logged In" id="loggedIn">
-                    <label for="loggedIn">Keep me logged in</label>
-                    <a href="#">Forgot Password</a>
-                    <button>Log In</button>
-                </form>
-
-                <hr id="hr3">
-
-                <p id="last-p">Dont have an account? <a href="#">Sign Up</a></p>
-            </div>
-
-            <div class="right-div">
-                <p id="p1"><b>New Update Available</b><br> <br> We have added some new <br> awesome features</p> <br>
-                <button class="btn">LEARN MORE</button>
-                
-                <img class="imgg" src="{% static 'images/undraw_product_explainer_8jbm.svg' %}" alt="">
-            </div>
         </div>
 
+        <div class="right-div">
+
+            <form method='POST' action="">
+
+                <div class="text">
+                    <h1>Welcome Back</h1>
+                    <h4>Sign in to continue your progress</h4>
+                </div>
+                <label for="email">Email / Username:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="email">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <div style="display: flex; max-width: 90%; justify-content: space-between;">
+
+                    <label for="remember">
+                        <input type="checkbox" id="remember" name="remember">
+                        Remember me
+                    </label>
+
+                    <a href="#">Forgot password?</a>
+                </div>
+
+                <input type="submit" value="Sign In">
+            </form>
+
+            <div  style="text-align: center;" class="alternative">
+
+                <h4>OR LOGIN WITH</h4>
+                <div class="socials">
+                    <div class="instagram"> <img src="{% static 'images/instagram.png' %}" alt=""></div>
+                    <div class="facebook"><img src="{% static 'images/facebook.png' %}" alt=""></div>
+                    <div class="google"><img src="{% static 'images/google.png' %}" alt=""></div>
+                    <div class="twitter"><img src="{% static 'images/twitter.png' %}" alt=""></div>
+                </div>
+            </div>
+
+
+        </div>
     </div>
-    
+
+
 </body>
+
 </html>
