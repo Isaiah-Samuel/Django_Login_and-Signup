@@ -16,15 +16,18 @@
     <div class="main">
 
         <div class="left-div">
-
-            <form method='POST' action="">
+             {% for message in messages %}
+             <h5 style="color:red">{{message}}</h5>
+             {% endfor %}
+            <form method='POST' action="register">
+                {% csrf_token %}
 
                 <div class="text">
                     <h1>Register Yourself</h1>
                     <h4>Begin your journey with us today</h4>
                 </div>
 
-                <div style="display: flex;; width: 100%;" class="names">
+                <div style="display: flex; width: 100%;" class="names">
                     <div style="width: 47.25%;"><label for="firstname">First Name:</label>
                     <input type="text" id="firstname" name="firstname" required></div>
 
@@ -36,7 +39,7 @@
                 <label for="email">Email / Username:</label>
                 <input type="email" id="email" name="email" required>
 
-                <label for="email">Password:</label>
+                <label for="password">Password:</label>
                 <input type="password" id="password" name="password" required>
                 <div style="display: flex; max-width: 90%; justify-content: space-between;">
 
