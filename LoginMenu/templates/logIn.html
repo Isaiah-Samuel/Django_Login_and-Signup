@@ -24,8 +24,12 @@
         </div>
 
         <div class="right-div">
+            {% for message in messages %}
+            <h3 style="color: red; text-align: center;">{{message}}</h3>
+            {% endfor %}
 
             <form method='POST' action="">
+                {% csrf_token %}
 
                 <div class="text">
                     <h1>Welcome Back</h1>
