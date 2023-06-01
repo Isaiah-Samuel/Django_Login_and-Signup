@@ -5,15 +5,15 @@ from django.contrib.auth import authenticate, login
 from django.contrib import messages
 
 # Create your views here.\
-def landingpage(request):
-    return render(request,'landingpage.html')
+# def landingpage(request):
+#     return render(request,'landingpage.html')
 
 # def logIn(request):
 #     return render(request, 'logIn.html')      
 
 def homepage(request):
-    name = request.User.first_name
-    return render(request,'homepage.html',{'name': name})
+    # name = request.User.first_name
+    return render(request,'homepage.html')
 
 
 def register(request):
