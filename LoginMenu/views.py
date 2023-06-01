@@ -9,10 +9,11 @@ def landingpage(request):
     return render(request,'landingpage.html')
 
 # def logIn(request):
-#     return render(request, 'logIn.html')
+#     return render(request, 'logIn.html')      
 
 def homepage(request):
-    return render(request,'homepage.html')
+    name = request.User.first_name
+    return render(request,'homepage.html',{'name': name})
 
 
 def register(request):
@@ -34,7 +35,7 @@ def register(request):
             else:
                 user = User.objects.create_user(username=email,first_name=first_name, last_name=last_name, email=email, password=password)
                 user.save()
-                return redirect('logIn')
+                return redirect('login')
         else:
             messages.info(request, 'Password not the same')
             return redirect('register')

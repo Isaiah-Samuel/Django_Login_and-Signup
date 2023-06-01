@@ -19,7 +19,7 @@
              {% for message in messages %}
              <h4 style="color:red">{{message}}</h4>
              {% endfor %}
-            <form method='POST' action="register">
+            <form method='POST' action="{% url 'register' %}">
                 {% csrf_token %}
 
                 <div class="text">
@@ -65,7 +65,7 @@
                 </div>
                 <div style="justify-content: center; display: flex; margin-top: 20px; ">
                     <h4 style="margin-right: 10px;">Already signed up? </h4>
-                    <a href="{% url 'logIn' %}">Click Here</a>
+                    <a href="{% url 'login' %}">Click Here</a>
                 </div>
             </div>
 
