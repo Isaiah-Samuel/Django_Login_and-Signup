@@ -54,6 +54,6 @@ def logIn(request):
             return render(request, 'homepage.html')
         else:
             messages.error(request, 'oops!!!  Invalid email or password')
-            return redirect('logIn')
+            return redirect('login')
     else:
         return render(request,'logIn.html')

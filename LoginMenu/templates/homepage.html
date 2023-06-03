@@ -9,8 +9,12 @@
     <title>Homepage</title>
 </head>
 <body>
+    {% if user.is_authenticated %}
 
-    <h1>WELCOME {{name}}</h1>
+    <h1 style="color: blue; text-align: center; font-size: 200px;">WELCOME {{user.first_name}}</h1>
+    {% else %}
+    <h1>WELCOME ANYBODY</h1>
+    {% endif %}
     
 </body>
 </html>
